@@ -1,0 +1,476 @@
+.main__registration {}
+
+
+
+
+.registration__step-one {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1728px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.step-one__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 40px 80px;
+    align-items: center;
+    margin-left: 240px;
+}
+
+.step-two__back {
+    align-self: start;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.registraion-logo {}
+
+.registraion__form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 464px;
+
+    input {
+        border: 2px solid #E5E5E6;
+        border-radius: 4px;
+        padding: 14px 16px;
+
+        &:focus {
+            border: 2px solid #6B7EEC;
+        }
+    }
+
+    label {
+        position: absolute;
+        top: 14px;
+        left: 16px;
+        transition: all .3s ease-in-out;
+        color: #858589;
+    }
+
+    input[type="text"]:focus~label,
+    input[type="password"]:focus~label,
+    input:not(:placeholder-shown)~label {
+        top: 1px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 133%;
+        color: #25252D;
+
+    }
+
+    input:focus,
+    input:not(:placeholder-shown) {
+        border: 2px solid #6B7EEC;
+    }
+}
+
+.registraion__title {
+    color: var(--color-primary);
+    text-align: center;
+}
+
+.registragion__name-wrapper {
+    display: flex;
+    gap: 24px;
+
+}
+
+.registraion__input-wrapper {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+
+.registration__email {
+    position: relative;
+
+    input {
+        width: 100%;
+    }
+}
+
+.registration__password {
+    position: relative;
+
+    input {
+        width: 100%;
+    }
+}
+
+.registraion__input-password {}
+
+.registraion__create-btn {
+    padding: 12px 0;
+    border-radius: 4px;
+    background: var(--color-orange);
+    display: flex;
+    color: var(--color-white);
+    justify-content: center;
+    width: 100%;
+}
+
+.registraion__or {
+    color: #858589;
+}
+
+.registration__btns {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 464px;
+
+    a {
+        border-radius: 4px;
+        padding: 11px 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        transition: background .3s ease-in-out;
+
+        &:hover {
+            background: #bdbdbd;
+            border: 1px solid #bdbdbd;
+        }
+    }
+}
+
+.facebook__link {
+    background: var(--color-blue);
+    border: 1px solid var(--color-blue);
+    color: var(--color-white);
+}
+
+.google__link {
+    border: 1px solid #25252D;
+    color: var(--color-primary);
+    background: var(--color-white);
+}
+
+.apple__link {
+    background: black;
+    border: 1px solid black;
+    color: var(--color-white);
+}
+
+.registraion__privacy {
+    text-align: center;
+    color: var(--color-primary);
+
+    a {
+        color: var(--color-blue);
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.registraion__sign-in {
+    text-align: center;
+    color: var(--color-primary);
+
+    a {
+        color: var(--color-blue);
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+.registraion__step-two {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1728px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.step-two__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 40px 80px;
+    align-items: center;
+    margin-left: 240px;
+    margin-top: -367px;
+}
+
+
+
+
+.step-two__text {
+    color: #858589;
+    text-align: center;
+    width: 100%;
+}
+
+.registration__email {}
+
+.registraion__input-business {}
+
+.registraion__cont-btn {
+    padding: 12px 0;
+    border-radius: 4px;
+    background: var(--color-orange);
+    display: flex;
+    color: var(--color-white);
+    justify-content: center;
+    width: 100%;
+}
+
+.step-two__image {
+    position: relative;
+    width: 100%;
+    max-width: 846px;
+    background: rgba(107, 126, 236, 0.08);
+    padding-bottom: 252px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.step-two__people {
+    margin-left: 66px;
+}
+
+.step-two__dialog {
+
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 103px;
+}
+
+.dialog__content {
+    padding: 24px;
+    background: var(--color-white);
+    border-radius: 16px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    box-shadow: 0px 8px 40px rgba(107, 126, 236, 0.16);
+    margin-top: 242px;
+    align-self: center;
+    width: 100%;
+    max-width: 392px;
+
+}
+
+.dialog__image {}
+
+.dialog__text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 240px;
+}
+
+.business-name {
+    max-width: 240px;
+}
+
+.dialog__info {
+    color: #858589;
+}
+
+
+
+
+.registraion__step-three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.step-three__inner{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 40px 80px;
+    align-items: center;
+    margin-left: 240px;
+    margin-top: -260px;
+}
+.step-three__back{
+    align-self: start;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.country-code {
+    padding: 13.5px 36px 13.5px 8px;
+    background: #FFFFFF;
+    color: #858589;
+    border: 2px solid #E5E5E6;
+    border-radius: 4px;
+    max-width: 100px;
+}
+
+.registraion__number {
+    display: flex;
+    gap: 16px;
+
+}
+.registraion__contTwo-btn{
+    padding: 12px 0;
+    border-radius: 4px;
+    background: var(--color-orange);
+    display: flex;
+    color: var(--color-white);
+    justify-content: center;
+    width: 100%;
+}
+.registration__phone {
+    position: relative;
+    width: 100%;
+    flex: 1;
+
+    input {
+        width: 100%;
+    }
+}
+
+.step-three__image {
+    position: relative;
+    width: 100%;
+    max-width: 846px;
+    background: rgba(107, 126, 236, 0.08);
+    padding-bottom: 252px;
+    display: flex;
+    height: 1024px;
+    flex-direction: column-reverse;
+}
+.step-three__blank{
+    box-shadow: 0px 8px 40px rgba(107, 126, 236, 0.16);
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 440px;
+    margin-left: 98px;
+}
+
+
+.registraion__contThree-btn{
+    padding: 12px 0;
+    border-radius: 4px;
+    background: var(--color-orange);
+    display: flex;
+    color: var(--color-white);
+    justify-content: center;
+    width: 100%;
+}
+.registraion__step-four{
+    display: flex;
+    margin-top: 20px;
+    max-width: 1728px;
+    width: 100%;
+    margin: 0px auto 0 auto;
+}
+.step-four-inner{
+    margin-top: 146px;
+}
+.step-four__back{
+    align-self: start;
+    align-items: center;
+    display: flex;
+    gap: 4px;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.registration__inputs-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 464px;
+    position: relative;
+
+    input {
+        border: 2px solid #E5E5E6;
+        border-radius: 4px;
+        padding: 14px 16px;
+
+        &:focus {
+            border: 2px solid #6B7EEC;
+        }
+    }
+
+    label {
+        position: absolute;
+        top: 14px;
+        left: 16px;
+        transition: all .3s ease-in-out;
+        color: #858589;
+    }
+
+    input[type="text"]:focus~label,
+    input[type="password"]:focus~label,
+    input:not(:placeholder-shown)~label {
+        top: 1px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 133%;
+        color: #25252D;
+
+    }
+
+    input:focus,
+    input:not(:placeholder-shown) {
+        border: 2px solid #6B7EEC;
+    }
+}
+.registraion__contFour-btn{
+    padding: 12px 0;
+    border-radius: 4px;
+    background: var(--color-orange);
+    display: flex;
+    color: var(--color-white);
+    justify-content: center;
+    width: 100%;
+}
+
+.registraion__contFour-text{
+    color: #858589;
+
+    a {
+        color: var(--color-blue);
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.step-hour__image{
+    height: 1280px;
+    position: relative;
+}
+.step-four__blank{
+    position: absolute;
+    top: 256px;
+}
+.hidden {
+    display: none;
+}

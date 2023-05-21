@@ -1,0 +1,192 @@
+button {
+  background: none;
+  border: none;
+}
+
+body {
+  overflow: hidden;
+}
+
+.main__content {
+  display: flex;
+  width: 100%;
+  max-width: 1728px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__sign-in {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 80px;
+  width: 100%;
+  margin-left: 240px;
+}
+
+.main__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 464px;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+.form__title {
+  color: var(--color-primary);
+}
+
+.input__email-wrapper {
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input__email-wrapper,
+.input__password-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 464px;
+}
+.input__email-wrapper input,
+.input__password-wrapper input {
+  border: 2px solid #E5E5E6;
+  border-radius: 4px;
+  padding: 14px 16px;
+}
+.input__email-wrapper input:focus,
+.input__password-wrapper input:focus {
+  border: 2px solid #6B7EEC;
+}
+.input__email-wrapper label,
+.input__password-wrapper label {
+  position: absolute;
+  top: 14px;
+  left: 16px;
+  transition: all 0.3s ease-in-out;
+}
+.input__email-wrapper input:not(:-moz-placeholder-shown) ~ label, .input__password-wrapper input:not(:-moz-placeholder-shown) ~ label {
+  top: 1px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  color: #25252D;
+}
+.input__email-wrapper input[type=text]:focus ~ label,
+.input__email-wrapper input[type=password]:focus ~ label,
+.input__email-wrapper input:not(:placeholder-shown) ~ label,
+.input__password-wrapper input[type=text]:focus ~ label,
+.input__password-wrapper input[type=password]:focus ~ label,
+.input__password-wrapper input:not(:placeholder-shown) ~ label {
+  top: 1px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  color: #25252D;
+}
+.input__email-wrapper input:not(:-moz-placeholder-shown), .input__password-wrapper input:not(:-moz-placeholder-shown) {
+  border: 2px solid #6B7EEC;
+}
+.input__email-wrapper input:focus,
+.input__email-wrapper input:not(:placeholder-shown),
+.input__password-wrapper input:focus,
+.input__password-wrapper input:not(:placeholder-shown) {
+  border: 2px solid #6B7EEC;
+}
+
+.input__password-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.forgot-password {
+  color: var(--color-blue);
+}
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.main__form-btn {
+  padding: 12px 0;
+  border-radius: 4px;
+  background: var(--color-orange);
+  display: flex;
+  color: var(--color-white);
+  justify-content: center;
+  width: 100%;
+}
+
+.main__claim-business {
+  color: var(--color-primary);
+}
+.main__claim-business a {
+  color: var(--color-blue);
+}
+.main__claim-business a:hover {
+  text-decoration: underline;
+}
+
+.main__or {
+  margin-bottom: 24px;
+  color: #858589;
+}
+
+.main__btns {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 464px;
+  margin-bottom: 24px;
+}
+.main__btns a {
+  border-radius: 4px;
+  padding: 11px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.3s ease-in-out;
+}
+.main__btns a:hover {
+  background: #bdbdbd;
+  border: 1px solid #bdbdbd;
+}
+
+.main__facebook-link {
+  background: var(--color-blue);
+  border: 1px solid var(--color-blue);
+  color: var(--color-white);
+}
+
+.main__google-link {
+  border: 1px solid #25252D;
+  color: var(--color-primary);
+  background: var(--color-white);
+}
+
+.main__apple-link {
+  background: black;
+  border: 1px solid black;
+  color: var(--color-white);
+}
+
+.main__privacy {
+  text-align: center;
+  color: var(--color-primary);
+}
+.main__privacy a {
+  color: var(--color-blue);
+}
+.main__privacy a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */

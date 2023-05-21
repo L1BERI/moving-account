@@ -21,8 +21,8 @@ slides.forEach((slide, index) => {
     carousel.addEventListener('touchmove', drag);
 
     slide.addEventListener('click', () => {
-        // Действия при клике на слайд (по желанию)
-        // Например, можно добавить переход на другую страницу с полным изображением слайда
+        // Действия при клике на слайд 
+       
     });
 });
 

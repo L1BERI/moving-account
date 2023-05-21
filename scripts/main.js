@@ -9,43 +9,43 @@ window.addEventListener('DOMContentLoaded', function () {
 });
 
 function showContent(contentId, tabElement) {
-  // Скрыть все элементы контента
+  
   var contentElements = document.getElementsByClassName('main__content');
   for (var i = 0; i < contentElements.length; i++) {
     contentElements[i].classList.add('hidden');
   }
 
-  // Показать выбранный элемент контента
+  
   var selectedContent = document.getElementById(contentId);
   selectedContent.classList.remove('hidden');
 
-  // Удалить класс "tabActive" у всех ссылок в меню
+  
   var tabElements = document.getElementsByClassName('aside-menu__list')[0].getElementsByTagName('li');
   for (var i = 0; i < tabElements.length; i++) {
     tabElements[i].classList.remove('tabActive');
   }
 
-  // Добавить класс "tabActive" к активной ссылке в меню
+  
   tabElement.classList.add('tabActive');
 }
 function showChat(chatId, element) {
-  // Скрываем все блоки с классом "chat-content__inner"
+  
   var chatContents = document.querySelectorAll('.chat-content__inner');
   chatContents.forEach(function (chatContent) {
     chatContent.classList.add('hidden');
   });
 
-  // Показываем выбранный чат по ID
+  
   var chat = document.getElementById(chatId);
   chat.classList.remove('hidden');
 
-  // Удаляем класс "chat-users__item-active" у всех элементов списка пользователей
+  
   var chatUsers = document.querySelectorAll('.chat-users__item');
   chatUsers.forEach(function (chatUser) {
     chatUser.classList.remove('chat-users__item-active');
   });
 
-  // Добавляем класс "chat-users__item-active" выбранному элементу списка пользователей
+  
   element.classList.add('chat-users__item-active');
 }
 const ratings = document.querySelectorAll('.rating');
@@ -194,11 +194,11 @@ let billsModalForm = document.querySelector('.bills-modal__form');
 
 
 billsModalForm.addEventListener('submit', event => {
-  event.preventDefault(); // Отмена отправки формы
+  event.preventDefault(); 
 
-  // Проверка заполненности всех полей формы
+  
   if (billsModalForm.checkValidity()) {
-    // Если все поля заполнены, открываем второе модальное окно
+   
     billsModal.style.display = 'none';
 
     billsSuccesModal.style.display = 'block';
@@ -340,7 +340,7 @@ actionImageInput.forEach(function (input) {
     var fileName = file.name;
     actionPreviewImageText.forEach(textImage => {
       textImage.textContent = fileName;
-      actionPreviewImageTextValue = fileName; // Присваиваем значение переменной
+      actionPreviewImageTextValue = fileName; 
     });
 
   });
@@ -367,7 +367,7 @@ actionVideoInput.forEach(function (input) {
     var fileName = file.name;
     actionPreviewVideoText.forEach(textVideo => {
       textVideo.textContent = fileName;
-      actionPreviewVideoTextValue = fileName; // Присваиваем значение переменной
+      actionPreviewVideoTextValue = fileName; 
     });
   });
 });
@@ -429,17 +429,7 @@ function displaySelectedValue() {
 }
 
 
-// Last message
 
-// let chatMessages = document.querySelectorAll('.messenger-chat__inner .messenger-chat__message-wrapper .messenger-chat__message');
-// let chatLastMessages = chatMessages[chatMessages.length - 1];
-
-// let chatSendBtn = document.querySelector('.messenger-action__send-button');
-
-// chatSendBtn.addEventListener('click', function (e) {
-//   e.preventDefault();
-
-// })
 
 
 
@@ -741,14 +731,14 @@ micBtn.addEventListener('click', function () {
 const fileWrapper = document.querySelectorAll('.messenger-action__file-wrapper');
 const fileBtn = document.querySelectorAll('.messenger-action__file-btn');
 
-// Обработчик клика по кнопке
+
 const handleButtonClick = () => {
   fileWrapper.forEach(wrapper => wrapper.classList.add('active'));
 };
 
-// Обработчик клика в любое другое место на странице
+
 const handleDocumentClick = (event) => {
-  // Проверяем, был ли клик на кнопке или внутри fileWrapper
+
   fileWrapper.forEach(wrapper => {
     if (event.target !== fileBtn && !wrapper.contains(event.target)) {
       wrapper.classList.remove('active');
@@ -756,9 +746,9 @@ const handleDocumentClick = (event) => {
   });
 };
 
-// Добавляем обработчик клика по кнопке
+
 fileBtn.forEach(btn => btn.addEventListener('click', handleButtonClick));
 
-// Добавляем обработчик клика в любое другое место на странице
+
 document.addEventListener('click', handleDocumentClick);
 

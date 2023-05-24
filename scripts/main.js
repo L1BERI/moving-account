@@ -752,3 +752,17 @@ fileBtn.forEach(btn => btn.addEventListener('click', handleButtonClick));
 
 document.addEventListener('click', handleDocumentClick);
 
+  let billsCheckboxes = document.querySelectorAll('.bills-content__checkbox')
+
+  billsCheckboxes.forEach(function(checkbox) {
+    checkbox.addEventListener('change', function() {
+      if (checkbox.checked) {
+        // Снимаем отметку с остальных checkbox
+        billsCheckboxes.forEach(function(otherCheckbox) {
+          if (otherCheckbox !== checkbox) {
+            otherCheckbox.checked = false;
+          }
+        });
+      }
+    });
+  });

@@ -2686,7 +2686,7 @@ button {
 .chat-call__modal {
   position: fixed;
   left: calc(50% - 585.5px + 0.5px);
-  top: 100pxpx;
+  top: 50px;
   z-index: 200;
   display: none;
 }
